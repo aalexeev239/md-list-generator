@@ -45,9 +45,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.md-list__group:last-child {
-  margin-bottom: 0;
-}
 .md-list__label {
   display: inline-block;
   vertical-align: middle;
@@ -83,6 +80,20 @@ body {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+}
+.md-list__copyright {
+  font-size: 14px;
+  text-align: center;
+}
+.md-list__copyright a {
+  color: #69c7ef;
+  text-decoration: none;
+}
+.md-list__copyright a:hover {
+  color: #17a0da;
+}
+.md-list__copyright a:focus {
+  color: rgba(105,199,239,0.6);
 }
 .checkbox {
   position: relative;
