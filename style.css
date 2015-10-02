@@ -21,6 +21,10 @@ body {
   padding: 20px;
   background: #f3f3f3;
   border: 1px solid #e1e1e1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .md-list__title {
   font-size: 20px;
@@ -75,6 +79,10 @@ body {
   height: 180px;
   resize: none;
   font-size: 14px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 .checkbox {
   position: relative;
