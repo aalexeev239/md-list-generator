@@ -1,0 +1,120 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.md-list {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #434343;
+  width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background: #f3f3f3;
+  border: 1px solid #e1e1e1;
+}
+.md-list__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 1em;
+}
+.md-list__form {
+  width: 100%;
+}
+.md-list__group {
+  margin: 1em 0;
+}
+.md-list__group--flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.md-list__group:last-child {
+  margin-bottom: 0;
+}
+.md-list__label {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.md-list__field,
+.md-list__out {
+  border: 1px solid #e1e1e1;
+  color: #434343;
+  background: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.md-list__field:focus,
+.md-list__out:focus {
+  outline: none;
+  border-color: #69c7ef;
+}
+.md-list__field {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+}
+.md-list__out {
+  display: block;
+  width: 100%;
+  height: 180px;
+  resize: none;
+  font-size: 14px;
+}
+.checkbox {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+.checkbox__inp {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.checkbox__ind:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 0;
+  border: 1px solid #c2c2c2;
+  background: #fff;
+}
+.checkbox__ind:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #69c7ef;
+  border-left: 2px solid #69c7ef;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+.checkbox__inp:checked + .checkbox__ind:after {
+  opacity: 1;
+}
