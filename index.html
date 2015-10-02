@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="generate markdown list">
+<meta charset="utf-8">
+<title>generate markdown list</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <div class="md-list">
+  <h1 class="md-list__title">Generate markdown list</h1>
+    <form action="" class="md-list__form">
+      <div class="md-list__group">
+        <label for="ordered" class="checkbox">
+          <input class="checkbox__inp" type="checkbox" name="ordered" id="ordered" checked>
+          <span class="checkbox__ind"></span>
+          ordered list
+        </label>
+      </div>
+      <div class="md-list__group md-list__group--flex">
+        <label class="md-list__label" for="min">from</label>
+        <input class="md-list__field" type="number" name="min" id="min" value="1">
+        <label class="md-list__label" for="max">to</label>
+        <input class="md-list__field" type="number" name="max" id="max" value="30">
+      </div>
+      <div class="md-list__group">
+        <textarea class="md-list__out" name="out" id="out"></textarea>
+      </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
